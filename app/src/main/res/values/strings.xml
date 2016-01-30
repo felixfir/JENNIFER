@@ -1,5 +1,6 @@
-<resources>
+﻿<resources>
     <string name="app_name">JENNIFER</string>
+
 
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
@@ -13,7 +14,6 @@
     <string name="permission_rationale">"Se necesitan permisos para proporcionan los terminos de
         correo electronico."
     </string>
-<!--<<<<<<< HEAD-->
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -119,7 +119,13 @@
     <string name="drawer_header_text">Drawer Header</string>
     <string name="second_activity_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur diam id aliquam scelerisque. Donec ultrices lacus vel dignissim pharetra. Vivamus pharetra augue quis rhoncus placerat. Sed ultricies at risus non cursus. Nam rutrum leo nec placerat consectetur. Vestibulum feugiat eleifend diam, nec interdum augue tincidunt sit amet. Praesent feugiat est auctor lacus consectetur, vitae pellentesque dolor laoreet.</string>
     <string name="title_activity_second">SecondActivity</string>
-=======
     <string name="rankings_actividad">Ranking</string>
->>>>>>> refs/remotes/origin/pr/1
+
+
+
+        <string name="descripcion">Descripcion: lorem loremlorem loremlorem loremlorem loremlorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+        lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</string>
+    <string name="acumulado_string">Acumulado: </string>
+    <string name="total_apuestas_string">Total de apuestas:</string>
+    <string name="puntos_apuesta_string">Puntos apostados:</string>
 </resources>
