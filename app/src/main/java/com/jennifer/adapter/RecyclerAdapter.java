@@ -2,6 +2,7 @@ package com.jennifer.adapter;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.Gravity;
@@ -72,8 +73,10 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
                 layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                 ViewGroup container = (ViewGroup)layoutInflater.inflate(R.layout.popup_info_apuestas,null);
                 popUpWindow = new PopupWindow(container,1000,750,true);
+ /*               popUpWindow.setBackgroundDrawable(new ColorDrawable(
+                        android.graphics.Color.TRANSPARENT));*/
                 popUpWindow.showAtLocation(view, Gravity.NO_GRAVITY,500,500);
-
+               // view.setAlpha(1);
 
                 container.setOnTouchListener(new View.OnTouchListener() {
                     @Override
