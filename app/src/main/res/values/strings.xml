@@ -7,6 +7,7 @@
     <string name="prompt_password">Password (optional)</string>
     <string name="action_sign_in">Ingresar o registrarse</string>
     <string name="action_sign_in_short">Ingresar</string>
+    
     <string name="error_invalid_email">La dirección de correo es invalida</string>
     <string name="error_invalid_password">La contraseña es demasiado corta</string>
     <string name="error_incorrect_password">La contraseña es incorrecta</string>
