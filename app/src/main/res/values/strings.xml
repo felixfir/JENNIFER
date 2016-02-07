@@ -130,5 +130,14 @@
         lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</string>
     <string name="acumulado_string">Acumulado: </string>
     <string name="total_apuestas_string">Total de apuestas:</string>
+    <string name="crear_privada">Crear Privada</string>
     <string name="puntos_apuesta_string">Puntos apostados:</string>
+    <string name="titulo">Escriba el título</string>
+    <string name="descripcionFelix">Escriba la descripción</string>
+    <string name="premio">Escriba el premio</string>
+    <string name="tipoApuesta">Tipo de Apuesta</string>
+    <string-array name="tipoApuestaArray">
+        <item>Pre-Apuesta</item>
+        <item>Tiempo Real</item>
+    </string-array>
 </resources>

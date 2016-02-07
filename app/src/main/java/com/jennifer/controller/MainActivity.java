@@ -87,6 +87,11 @@ public class MainActivity extends AppCompatActivity
             startActivity(actApuestasPublicas);
         }
 
+        if (id == R.id.crear_privadas) {
+            Intent actCrearPrivadas = new Intent(getApplicationContext(), CrearPrivadas.class);
+            startActivity(actCrearPrivadas);
+        }
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;

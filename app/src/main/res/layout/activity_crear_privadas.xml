@@ -1,0 +1,194 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".CrearPrivadas"
+    android:id="@+id/crear_privadas">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/editDateFecha"
+        android:onClick="dateOnClick"
+        android:layout_below="@+id/editTextDescripcion"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha Inicio:"
+        android:id="@+id/textView2"
+        android:layout_alignBottom="@+id/editDateFecha"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/buttonInsertar"
+        android:layout_toStartOf="@+id/buttonInsertar"
+        android:layout_below="@+id/editTextDescripcion" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apuesta Nueva"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextTitulo"
+        android:hint="@string/titulo"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Título de la apuesta:"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/editTextTitulo"
+        android:layout_alignEnd="@+id/editTextTitulo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descripción de la apuesta:"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/editTextTitulo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/editTextTitulo"
+        android:layout_alignEnd="@+id/editTextTitulo" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextDescripcion"
+        android:hint="@string/descripcionFelix"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo Apuesta:"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/editDateFecha"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:id="@+id/spinnerTipoApuesta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/tipoApuesta"
+        android:spinnerMode="dropdown"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5"
+        android:entries="@array/tipoApuestaArray"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crear"
+        android:id="@+id/buttonInsertar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextUsers"
+        android:inputType="number"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/buttonAddUsuarios"
+        android:layout_toStartOf="@+id/buttonAddUsuarios" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar"
+        android:id="@+id/buttonAddUsuarios"
+        android:layout_alignBottom="@+id/editTextUsers"
+        android:layout_alignRight="@+id/spinnerTipoApuesta"
+        android:layout_alignEnd="@+id/spinnerTipoApuesta" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuarios ID:"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/spinnerTipoApuesta"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Respuestas:"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/editTextUsers"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextRespuestas"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/editTextUsers"
+        android:layout_alignEnd="@+id/editTextUsers" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar"
+        android:id="@+id/buttonAddRespuestas"
+        android:layout_alignBottom="@+id/editTextRespuestas"
+        android:layout_alignLeft="@+id/buttonAddUsuarios"
+        android:layout_alignStart="@+id/buttonAddUsuarios" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Premio:"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/editTextRespuestas"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"
+        android:layout_toLeftOf="@+id/editTextPremio"
+        android:layout_toStartOf="@+id/editTextPremio" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextPremio"
+        android:hint="@string/premio"
+        android:inputType="number"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_toRightOf="@+id/textView6"
+        android:layout_alignRight="@+id/editTextDescripcion"
+        android:layout_alignEnd="@+id/editTextDescripcion" />
+
+</RelativeLayout>

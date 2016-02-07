@@ -6,6 +6,11 @@
             android:id="@+id/apu_publicas"
             android:icon="@drawable/ic_menu_camera"
             android:title="@string/apuestas_publicas" />
+
+        <item
+            android:id="@+id/crear_privadas"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/crear_privada" />
         <!--item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_gallery"
