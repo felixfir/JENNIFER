@@ -121,7 +121,10 @@
     <string name="title_activity_second">SecondActivity</string>
     <string name="rankings_actividad">Ranking</string>
 
-
+    <!-- Strings del activity Apuestas publicas -->
+    <string name="title_activity_apuestas_publicas">Apuestas P\u00FAblicas</string>
+    <string name="apuestas_publicas">Apuestas p\u00FAblicas</string>
+    <!-- Strings del activity Apuestas publicas -->
 
         <string name="descripcion">Descripcion: lorem loremlorem loremlorem loremlorem loremlorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
         lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</string>
