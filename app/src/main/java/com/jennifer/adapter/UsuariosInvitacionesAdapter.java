@@ -2,7 +2,6 @@ package com.jennifer.adapter;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.drawable.ColorDrawable;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.Gravity;
@@ -22,18 +21,20 @@ import java.util.List;
 /**
  * Created by echessa on 7/24/15.
  */
-public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder> {
+public class UsuariosInvitacionesAdapter extends RecyclerView.Adapter<UsuariosInvitacionesAdapter.ViewHolder> {
 
     private List<User> mItems;
-    public RecyclerAdapter(List<User> items) {
+
+    public UsuariosInvitacionesAdapter(List<User> items) {
         mItems = items;
     }
+
     private PopupWindow popUpWindow;
     private LayoutInflater layoutInflater;
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
-        View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.list_row, viewGroup, false);
+        View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.invitacion_row, viewGroup, false);
 
         return new ViewHolder(v);
     }
@@ -62,7 +63,6 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
         });
 
 
-
         viewHolder.cv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -71,12 +71,12 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
                 Toast.makeText(context, "Your toast message.",
                         Toast.LENGTH_SHORT).show();*/
                 layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                ViewGroup container = (ViewGroup)layoutInflater.inflate(R.layout.popup_info_apuestas,null);
-                popUpWindow = new PopupWindow(container,1000,750,true);
+                ViewGroup container = (ViewGroup) layoutInflater.inflate(R.layout.popup_info_apuestas, null);
+                popUpWindow = new PopupWindow(container, 1000, 750, true);
  /*               popUpWindow.setBackgroundDrawable(new ColorDrawable(
                         android.graphics.Color.TRANSPARENT));*/
-                popUpWindow.showAtLocation(view, Gravity.NO_GRAVITY,500,500);
-               // view.setAlpha(1);
+                popUpWindow.showAtLocation(view, Gravity.NO_GRAVITY, 500, 500);
+                // view.setAlpha(1);
 
                 container.setOnTouchListener(new View.OnTouchListener() {
                     @Override
@@ -104,10 +104,10 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
 
         ViewHolder(View v) {
             super(v);
-            logImage = (ImageView)v.findViewById(R.id.log_image);
-            doneBtn = (ImageView)v.findViewById(R.id.done);
-            cancelBtn = (ImageView)v.findViewById(R.id.cancel);
-            cv = (CardView)v.findViewById(R.id.cv);
+            logImage = (ImageView) v.findViewById(R.id.log_image);
+            doneBtn = (ImageView) v.findViewById(R.id.done);
+            cancelBtn = (ImageView) v.findViewById(R.id.cancel);
+            cv = (CardView) v.findViewById(R.id.cv);
         }
     }
 
