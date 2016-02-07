@@ -27,6 +27,7 @@ public class CrearPrivadas extends AppCompatActivity implements View.OnClickList
 
     /*Algunas declaraciones*/
     int i;
+
     int contadorUsuarios = 0;
     int contadorRespuestas = 0;
     String user;
